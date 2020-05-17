@@ -20,7 +20,7 @@
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 ### finish()的用法
 说明：
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
     补充：当设计不需要返回上一个Activity时则调用finish方法。
 ## 遇到的问题
  ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
