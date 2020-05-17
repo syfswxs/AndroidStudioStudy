@@ -1,7 +1,7 @@
 # 安卓大白话笔记
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
-## 工具
-AndroidStudio
+#### 工具
+* AndroidStudio
 ## (一)使用AndroidStudio的一些小技巧
 ### 代码自动排版快捷键
   * Ctrl + Alt + L
@@ -31,6 +31,8 @@ AndroidStudio
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
  
      补充：当设计不需要返回上一个Activity时则调用finish方法。
+     
+     ---
 ## (二)遇到的问题
 ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
