@@ -6,16 +6,16 @@
 ### 代码自动排版快捷键
   * Ctrl + Alt + L
   
-  ---
+ ---
 ### 自动导入包快捷键
   * Alt + Enter
   
-  ---
+ ---
 ### 展开收缩代码快捷键
   * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
   * Ctrl + 或 - 对当前方法展开或者收起
   
-  ---
+ ---
 ### Toast提示框
   * 代码：
   ```java
@@ -32,7 +32,7 @@
  
      补充：当设计不需要返回上一个Activity时则调用finish方法。
      
-     ---
+ ---
 ## (二)遇到的问题
 ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
@@ -50,3 +50,7 @@
 * 创建好后的界面
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B3.jpg)
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
+
+## （四）实现功能
+### 显示文本
