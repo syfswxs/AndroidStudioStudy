@@ -11,7 +11,7 @@ AndroidStudio
   * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
   * Ctrl + 或 - 对当前方法展开或者收起
 ### Toast提示框
-  代码：
+  * 代码：
   ```java
   Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
   ```
@@ -19,7 +19,7 @@ AndroidStudio
     文本也根据需要修改
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 ### finish()的用法
-  说明：
+  * 说明：
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
  
      补充：当设计不需要返回上一个Activity时则调用finish方法。
@@ -30,4 +30,13 @@ AndroidStudio
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
 
 ## 创建工程
-
+想要做一个app第一步则需要打开AndroidStudio创建工程
+* 打开AndroidStudio
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.jpg)
+* 选择EmptyActivity
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B1.jpg)
+* 设置相关信息
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B2.jpg)
+* 创建好后的界面
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B3.jpg)
+* 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
