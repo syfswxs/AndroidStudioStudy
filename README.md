@@ -20,4 +20,5 @@
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 ### finish()的用法
 说明：
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
+* 补充：当设计不需要返回上一个Activity时则调用finish方法。
