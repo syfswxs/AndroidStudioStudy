@@ -15,6 +15,3 @@
   ```java
   Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
   ```
-    其中JgjlActivity为当前activity的名称，根据实际情况更改
-    提示框内容也根据需要更改
-  
