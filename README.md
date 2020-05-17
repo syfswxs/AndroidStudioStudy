@@ -18,7 +18,6 @@
     JgjlActivity为当前Activity的名称，根据实际情况修改
     文本也根据需要修改
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
-### 第三方
-* 水电费
- * 地府
-  * 第三方
+### finish()的用法
+说明：
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.png)
