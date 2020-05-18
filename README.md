@@ -68,7 +68,7 @@
 * 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
       
-[TextView详细用法](https://blog.csdn.net/zhaizu/article/details/52740642)
+[TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)
 
 		当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等
 ---
