@@ -68,7 +68,7 @@
 * 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
       
-[TextView详细用法](https://blog.csdn.net/zhaizu/article/details/52740642"点击查看")
+[TextView详细用法](https://blog.csdn.net/zhaizu/article/details/52740642)
 
 		当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等
 ---
@@ -80,6 +80,6 @@
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%802.jpg)
 * 我们可以看出，需要第二段文本时，只需要在布局管理器组件内添加新的文本组件即可，这里边需要给各组件设置id标记，在第二个文本组件里我们需要它排列在第一个文本组件的下方，所以我们需要获取1组件的id再调用android:layout_below代码进行排列。该例子是在**相对布局管理器RelativeLayout**下实现的。
 
-[相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html "点击查看")
+[相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html)
 
 		当然，AndroidStudio的布局管理器有多种，可自行学习使用
