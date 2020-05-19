@@ -61,7 +61,7 @@
     这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
 ## （四）实现功能
 ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
-### TextView（文本框组件）显示文本
+* ### TextView（文本框组件）显示文本
 * 在需要修改的界面activity.xml文件下选中左下角Text栏
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B6.jpg)
 * 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"
@@ -87,6 +87,4 @@
 		当然，AndroidStudio的布局管理器有多种，可自行学习使用
 
 ---
-### 实现按钮功能
-我们需要设置按钮来进行用户的交互，接下来我们实现按钮功能。
-* 
+
