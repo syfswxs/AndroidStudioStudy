@@ -72,7 +72,12 @@
         * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
       * 实现
         >把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
-        * 
+        * 右键drawable文件夹->New->Drawable resource file
+        ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_1.png)
+        * 自定义名字->ok
+        ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_2.png)
+        * 如图修改创建好的xml文件内容，就事先设置好了背景图片
+        ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_3.png)
     
   * #### 输入框（EditText）
     * 输入框组件如同文本组件一样在布局管理器之中添加  
