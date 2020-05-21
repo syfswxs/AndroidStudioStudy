@@ -8,7 +8,7 @@
 
       使用此方法时请阅读下方相关留言会更有帮助。
     
-## (一)使用AndroidStudio的一些小技巧
+## (一) 使用AndroidStudio的一些小技巧
 * ### 代码自动排版快捷键
     * Ctrl + Alt + L
 * ### 自动导入包快捷键
@@ -21,12 +21,12 @@
   ```java
   Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
   ```
-    > JgjlActivity为当前Activity的名称，根据实际情况修改
+    > JgjlActivity为当前Activity的名称，根据实际情况修改    
     > 文本也根据需要修改
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 * ### finish()的用法
     * 说明：
- ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
  
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。
      
@@ -51,8 +51,7 @@
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B3.jpg)
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
-
-	这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
+>这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
 ## （四）实现功能
 ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
 * #### 显示文本（TextView文本框组件）
