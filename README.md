@@ -69,7 +69,7 @@
       [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
     * ##### 按钮背景修改
       * 展示
-        * 
+        * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
       * 实现
         >把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
         * 
