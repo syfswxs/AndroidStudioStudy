@@ -40,9 +40,11 @@
      
  ---
 ## (二)遇到的问题
-### 使用equals的时候，可能回事null值的对比参数要放后面，如图
+* ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
-### 当程序编译没问题，运行的时候又闪退，可以试试clean project
+
+---
+* ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
 
 ## （三）创建工程
@@ -73,13 +75,23 @@
 
 		当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等
 
+---
 * #### 按钮（Button）
 按钮组件如同文本组件一样在布局管理器之中添加
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
-	
 [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
 
 ---
+* #### 输入框（EditText）
+输入框组件如同文本组件一样在布局管理器之中添加
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
+[EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
+
+---
+* #### 图片（ImageView）
+图片组件如同文本组件一样在布局管理器之中添加
+[ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
+
 ### 内容的布局
 * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
