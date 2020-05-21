@@ -33,9 +33,9 @@
 ---
 ## （二） 遇到的问题
 * ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
+    * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 * ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
+    * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
 
 ---
 ## （三） 创建工程
@@ -53,25 +53,25 @@
 >这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
 ## （四） 实现功能
 * ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
-    * #### 显示文本（TextView文本框组件）
-    在需要修改的界面activity.xml文件下选中左下角Text栏  
+  * #### 显示文本（TextView文本框组件）
+    * 在需要修改的界面activity.xml文件下选中左下角Text栏  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B6.jpg)
-    我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"  
+    * 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B61.jpg)
-    修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作  
+    * 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
     >当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等  
     [TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)
-    * #### 按钮（Button）
-    按钮组件如同文本组件一样在布局管理器之中添加  
+  * #### 按钮（Button）
+    * 按钮组件如同文本组件一样在布局管理器之中添加  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
     [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
-    * #### 输入框（EditText）
-    输入框组件如同文本组件一样在布局管理器之中添加  
+  * #### 输入框（EditText）
+    * 输入框组件如同文本组件一样在布局管理器之中添加  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
     [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
-    * #### 图片（ImageView）
-    图片组件如同文本组件一样在布局管理器之中添加  
+  * #### 图片（ImageView）
+    * 图片组件如同文本组件一样在布局管理器之中添加  
     [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
     
 ---
