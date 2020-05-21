@@ -76,19 +76,19 @@
 		当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等
 
 ---
-* #### 按钮（Button）
+	* #### 按钮（Button）
 按钮组件如同文本组件一样在布局管理器之中添加
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
 [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
 
 ---
-* #### 输入框（EditText）
+	* #### 输入框（EditText）
 输入框组件如同文本组件一样在布局管理器之中添加
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
 [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
 
 ---
-* #### 图片（ImageView）
+	* #### 图片（ImageView）
 图片组件如同文本组件一样在布局管理器之中添加
 [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
 
