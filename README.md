@@ -76,16 +76,14 @@
     
 ---
 * ### 内容的布局
-从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%801.jpg)
-* 添加第二段文本
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%802.jpg)
-* 我们可以看出，需要第二段文本时，只需要在布局管理器组件内添加新的文本组件即可，这里边需要给各组件设置id标记，在第二个文本组件里我们需要它排列在第一个文本组件的下方，所以我们需要获取1组件的id再调用android:layout_below代码进行排列。该例子是在**相对布局管理器RelativeLayout**下实现的。
-
-[相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html)
-
-		当然，AndroidStudio的布局管理器有多种，可自行学习使用
+  * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件 
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%801.jpg)
+  * 添加第二段文本  
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%802.jpg)
+  * 我们可以看出，需要第二段文本时，只需要在布局管理器组件内添加新的文本组件即可，这里边需要给各组件设置id标记，在第二个文本组件里我们需要它排列在第一个文本组件的下方，所以我们需要获取1组件的id再调用android:layout_below代码进行排列。该例子是在**相对布局管理器RelativeLayout**下实现的。  
+  [相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html)
+  >当然，AndroidStudio的布局管理器有多种，可自行学习使用
 
 ---
 
