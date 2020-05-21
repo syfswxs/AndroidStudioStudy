@@ -21,9 +21,9 @@
   ```java
   Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
   ```
-    > JgjlActivity为当前Activity的名称，根据实际情况修改    
-    > 文本也根据需要修改
  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
+> JgjlActivity为当前Activity的名称，根据实际情况修改    
+> 文本也根据需要修改
 * ### finish()的用法
     * 说明：  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg) 
