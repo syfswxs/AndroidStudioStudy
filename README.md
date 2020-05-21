@@ -67,8 +67,13 @@
       * 按钮组件如同文本组件一样在布局管理器之中添加  
       ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
       [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
-    * ##### 按钮背景
-    水电费
+    * ##### 按钮背景修改
+      * 展示
+        * 
+      * 实现
+        >把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
+        * 
+    
   * #### 输入框（EditText）
     * 输入框组件如同文本组件一样在布局管理器之中添加  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
@@ -78,7 +83,7 @@
     [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
     
 ---
-* ### 内容的布局
+* ### 内容的布局  
   * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件 
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%801.jpg)
