@@ -60,37 +60,33 @@
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
 
-    这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
+	这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
 ## （四）实现功能
-> ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
->> #### 显示文本（TextView文本框组件）
->>> 在需要修改的界面activity.xml文件下选中左下角Text栏
+### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
+> #### 显示文本（TextView文本框组件）
+>> 在需要修改的界面activity.xml文件下选中左下角Text栏
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B6.jpg)
->>> 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"
+>> 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B61.jpg)
->>> 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作
+>> 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
       
 [TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)
 
 	当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等
-	
->> #### 按钮（Button）
+> #### 按钮（Button）
 按钮组件如同文本组件一样在布局管理器之中添加
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
 [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
-
----
->> #### 输入框（EditText）
+> #### 输入框（EditText）
 输入框组件如同文本组件一样在布局管理器之中添加
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
 [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
-
----
->> #### 图片（ImageView）
+> #### 图片（ImageView）
 图片组件如同文本组件一样在布局管理器之中添加
 [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
 
+---
 ### 内容的布局
 * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
