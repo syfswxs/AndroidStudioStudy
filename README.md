@@ -84,7 +84,7 @@
         ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)
     * ##### 按钮点击变色
       * 展示
-        * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%8C%89%E9%92%AE%E5%8F%98%E8%89%B2.gif)
+      ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%8C%89%E9%92%AE%E5%8F%98%E8%89%B2.gif)
       * 实现
         >按钮点击颜色的变化会带来好的交互体验
         * 思路是在按下的时候换另一个背景图片就行了，所以我们只需要再新建一个背景图片，其他属性都相同只是颜色不同从而达到变色效果
