@@ -1,3 +1,4 @@
+<span id="ml">ml</span>
 # 安卓大白话笔记
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## 工具
@@ -8,9 +9,9 @@
 >使用此方法时请阅读下方相关留言会更有帮助。
 ## （一）使用AndroidStudio的一些小技巧
 ### 1. 代码自动排版快捷键
-* Ctrl+Alt+L
+* Ctrl + Alt + L
 ### 2. 自动导入包快捷键
-* Alt+Enter
+* Alt + Enter
 ### 3. 展开收缩代码快捷键
 * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
 * Ctrl + 或 - 对当前方法展开或者收起
@@ -32,7 +33,6 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 >>>>>>[**【点我回到目录】**](#ml)
 ### 2. 当程序编译没问题，运行的时候又闪退，可以试试clean project
->>>>>>> ac79ba0d28f440c4cbe727c150914bf9bf6b4a1f
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
 >>>>>>[**【点我回到目录】**](#ml)
 ## （三） 创建工程
@@ -52,7 +52,6 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ## （四） 实现功能
 ### 1. 实现布局管理器内的view功能（文本显示、按钮、图片等等）
 #### a. 显示文本（TextView文本框组件）
->>>>>>> ac79ba0d28f440c4cbe727c150914bf9bf6b4a1f
 * 在需要修改的界面activity.xml文件下选中左下角Text栏  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B6.jpg)
 * 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"  
@@ -106,7 +105,6 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
 ### 2. 内容的布局
->>>>>>> ac79ba0d28f440c4cbe727c150914bf9bf6b4a1f
 * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件 
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%801.jpg)
