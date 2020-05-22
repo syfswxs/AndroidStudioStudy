@@ -27,8 +27,8 @@
 #### <span id="head3"> ！必读说明！</span>
 本文使用了大量的实际操作图文进行讲解，所以对于github图片加载不出来用户可先解决github图片加载问题后再进行学习，不然本教程将无法阅读。以下提供了一个方法，本人亲测有效。如果链接失效，请自行百度解决，养成先自己解决问题的好习惯。
 * [修复github图片加载问题的方法](https://www.jianshu.com/p/3eacebfc55ab "点击查看")
->使用此方法时请阅读下方相关留言会更有帮助。  
------------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
+>使用此方法时请阅读下方相关留言会更有帮助。
+>>[**点我回到目录**](#ml)
 
 ---    
 ## <span id="head4">（一） 使用AndroidStudio的一些小技巧</span>
@@ -51,7 +51,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。   
------------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
+>>>>>>[**点我回到目录**](#ml)
 
 ---
 ## <span id="head10">（二） 遇到的问题</span>
@@ -59,7 +59,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 ### <span id="head12">当程序编译没问题，运行的时候又闪退，可以试试clean project</span>
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
------------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
+>>[**点我回到目录**](#ml)
 
 ---
 ## <span id="head13">（三） 创建工程</span>
@@ -123,7 +123,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
      * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
        >可点击源文件参考代码  
------------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
+>>>>>>[**点我回到目录**](#ml)
 #### <span id="head18"> 输入框（EditText）</span>
 * 输入框组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
