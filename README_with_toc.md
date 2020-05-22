@@ -7,15 +7,15 @@
 * [修复github图片加载问题的方法](https://www.jianshu.com/p/3eacebfc55ab "点击查看")
 >使用此方法时请阅读下方相关留言会更有帮助。
 >>>>>>[**【点我回到目录】**](#ml)  
-## （一） 使用AndroidStudio的一些小技巧
-### 代码自动排版快捷键
+## 使用AndroidStudio的一些小技巧
+### 1. 代码自动排版快捷键
 * Ctrl+Alt+L
-### 自动导入包快捷键
+### 2. 自动导入包快捷键
 * Alt+Enter
-### 展开收缩代码快捷键
+### 3. 展开收缩代码快捷键
 * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
 * Ctrl + 或 - 对当前方法展开或者收起
-### Toast提示框
+### 4. Toast提示框
 * 代码：
 ```java
 Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
@@ -23,16 +23,16 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 > JgjlActivity为当前Activity的名称，根据实际情况修改  
 > 文本也根据需要修改
-### finish()的用法
+### 5. finish()的用法
 说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。   
 >>>>>>[**【点我回到目录】**](#ml)
-## （二） 遇到的问题
+## 遇到的问题
 ### 使用equals的时候，可能回事null值的对比参数要放后面
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
+* ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
+* ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
 >>>>>>[**【点我回到目录】**](#ml)
 ## （三） 创建工程
 >想要做一个app第一步则需要打开AndroidStudio创建工程
@@ -60,13 +60,13 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 >当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等  
 * [TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
-#### 按钮（Button）
-##### 添加按钮
+####    2. 按钮（Button）
+#####       1. 添加按钮
 * 按钮组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
 * [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)  
 >>>>>>[**【点我回到目录】**](#ml)
-##### 按钮背景修改
+#####       2. 按钮背景修改
 * 展示  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
 * 实现
