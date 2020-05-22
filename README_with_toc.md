@@ -9,14 +9,14 @@
 >>>>>>[**【点我回到目录】**](#ml)  
 ## （一） 使用AndroidStudio的一些小技巧
 ### 代码自动排版快捷键
-* Ctrl + Alt + L
+    Ctrl + Alt + L
 ### 自动导入包快捷键
-* Alt + Enter
+    Alt + Enter
 ### 展开收缩代码快捷键
-* 使用Ctrl Shift +或-，就可以展开或收起全部代码。
-* Ctrl + 或 - 对当前方法展开或者收起
+    使用Ctrl Shift +或-，就可以展开或收起全部代码。
+    Ctrl + 或 - 对当前方法展开或者收起
 ### Toast提示框
-* 代码：
+代码：
 ```java
 Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ```
@@ -24,7 +24,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 > JgjlActivity为当前Activity的名称，根据实际情况修改  
 > 文本也根据需要修改
 ### finish()的用法
-* 说明：  
+说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。   
 >>>>>>[**【点我回到目录】**](#ml)
