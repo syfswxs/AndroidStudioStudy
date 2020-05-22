@@ -111,10 +111,10 @@
   * 我们可以看出，需要第二段文本时，只需要在布局管理器组件内添加新的文本组件即可，这里边需要给各组件设置id标记，在第二个文本组件里我们需要它排列在第一个文本组件的下方，所以我们需要获取1组件的id再调用android:layout_below代码进行排列。该例子是在**相对布局管理器RelativeLayout**下实现的。  
   [相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html)
   >当然，AndroidStudio的布局管理器有多种，可自行学习使用
-
+    
 ---
 * ### 数据的传输
->获取输入的信息并使用  
+  >获取输入的信息并使用  
   * 输入信息是通过输入框等view输入的，我们要获得输入的数据，则要到与之对应的java文件里编写代码。在此我们以下图id为m_e_r的EditText为例  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_1.png)
   * 获取输入的内容则要到与之对应的java文件里编辑代码，当我们创建新的activity的时候系统会自动生成与之对应的java文件如图所示，我们点开MainActivity.java文件  
