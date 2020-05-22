@@ -32,10 +32,10 @@
 
 ---
 ## （二） 遇到的问题
-* ### 使用equals的时候，可能回事null值的对比参数要放后面，如图
-    * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
+* ### 使用equals的时候，可能回事null值的对比参数要放后面，如图  
+     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 * ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
-    * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
+     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
 
 ---
 ## （三） 创建工程
@@ -68,8 +68,8 @@
       ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
       [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
     * ##### 按钮背景修改
-      * 展示
-        * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
+      * 展示  
+        ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
       * 实现
         >把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
         * 右键drawable文件夹->New->Drawable resource file
@@ -83,7 +83,7 @@
         * 再回到当前activity的xml布局文件中在需要修改的按钮组件里修改android:background="@drawable/bt_baocun"内容，获取设置好的背景图片id即可
         ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)
     * ##### 按钮点击变色
-      * 展示
+      * 展示  
       ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%8C%89%E9%92%AE%E5%8F%98%E8%89%B2.gif)
       * 实现
         >按钮点击颜色的变化会带来好的交互体验
