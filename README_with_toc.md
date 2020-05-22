@@ -2,9 +2,23 @@
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
 - [（一） 使用AndroidStudio的一些小技巧](#head4)
-- [（二） 遇到的问题](#head5)
-- [（三） 创建工程](#head6)
-- [（四） 实现功能](#head7)
+- [ 代码自动排版快捷键](#head5)
+- [ 自动导入包快捷键](#head6)
+- [ 展开收缩代码快捷键](#head7)
+- [ Toast提示框](#head8)
+- [ finish()的用法](#head9)
+- [（二） 遇到的问题](#head10)
+- [使用equals的时候，可能回事null值的对比参数要放后面，如图  ](#head11)
+- [当程序编译没问题，运行的时候又闪退，可以试试clean project](#head12)
+- [（三） 创建工程](#head13)
+- [（四） 实现功能](#head14)
+- [ 实现布局管理器内的view功能（文本显示、按钮、图片等等）](#head15)
+	- [ 显示文本（TextView文本框组件）](#head16)
+	- [ 按钮（Button）](#head17)
+	- [ 输入框（EditText）](#head18)
+	- [ 图片（ImageView）](#head19)
+- [内容的布局  ](#head20)
+- [ 数据的传输](#head21)
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 #### <span id="head2"> 工具</span>
@@ -17,14 +31,14 @@
 
 ---    
 ## <span id="head4">（一） 使用AndroidStudio的一些小技巧</span>
-* ### 代码自动排版快捷键
+### <span id="head5"> 代码自动排版快捷键</span>
 * Ctrl + Alt + L
-* ### 自动导入包快捷键
+### <span id="head6"> 自动导入包快捷键</span>
 * Alt + Enter
-* ### 展开收缩代码快捷键
+### <span id="head7"> 展开收缩代码快捷键</span>
 * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
 * Ctrl + 或 - 对当前方法展开或者收起
-* ### Toast提示框
+### <span id="head8"> Toast提示框</span>
 * 代码：
 ```java
 Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
@@ -32,20 +46,20 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/Toast1.png)
 > JgjlActivity为当前Activity的名称，根据实际情况修改  
 > 文本也根据需要修改
-* ### finish()的用法
+### <span id="head9"> finish()的用法</span>
 * 说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。 
 
 ---
-## <span id="head5">（二） 遇到的问题</span>
-* ### 使用equals的时候，可能回事null值的对比参数要放后面，如图  
+## <span id="head10">（二） 遇到的问题</span>
+### <span id="head11">使用equals的时候，可能回事null值的对比参数要放后面，如图  </span>
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
-* ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
+### <span id="head12">当程序编译没问题，运行的时候又闪退，可以试试clean project</span>
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)
 
 ---
-## <span id="head6">（三） 创建工程</span>
+## <span id="head13">（三） 创建工程</span>
 >想要做一个app第一步则需要打开AndroidStudio创建工程
 * 打开AndroidStudio
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B.jpg)
@@ -58,9 +72,9 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
 >这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
-## <span id="head7">（四） 实现功能</span>
-* ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
-* #### 显示文本（TextView文本框组件）
+## <span id="head14">（四） 实现功能</span>
+### <span id="head15"> 实现布局管理器内的view功能（文本显示、按钮、图片等等）</span>
+#### <span id="head16"> 显示文本（TextView文本框组件）</span>
 * 在需要修改的界面activity.xml文件下选中左下角Text栏  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B6.jpg)
 * 我们看到布局文件的代码内容，如果想修改为其他文本内容，如：想显示“你好！”则在TextView（文本框组件）内的android:text（文本内容）后把"Hello World!"修改为 "你好！"  
@@ -69,7 +83,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
 >当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等  
 [TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)
-* #### 按钮（Button）
+#### <span id="head17"> 按钮（Button）</span>
 * ##### 添加按钮
 * 按钮组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
@@ -100,16 +114,16 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
 * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
 >可点击源文件参考代码
-* #### 输入框（EditText）
+#### <span id="head18"> 输入框（EditText）</span>
 * 输入框组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
 [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-edittext.html)
-* #### 图片（ImageView）
+#### <span id="head19"> 图片（ImageView）</span>
 * 图片组件如同文本组件一样在布局管理器之中添加  
 [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
 
 ---
-* ### 内容的布局  
+### <span id="head20">内容的布局  </span>
 * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件 
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%801.jpg)
@@ -120,7 +134,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 >当然，AndroidStudio的布局管理器有多种，可自行学习使用
 
 ---
-* ### 数据的传输
+### <span id="head21"> 数据的传输</span>
 >获取输入的信息并使用  
 * 输入信息是通过输入框等view输入的，我们要获得输入的数据，则要到与之对应的java文件里编写代码。在此我们以下图id为m_e_r的EditText为例  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_1.png)
