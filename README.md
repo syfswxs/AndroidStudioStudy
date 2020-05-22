@@ -27,7 +27,7 @@
 #### <span id="head3"> ！必读说明！</span>
 本文使用了大量的实际操作图文进行讲解，所以对于github图片加载不出来用户可先解决github图片加载问题后再进行学习，不然本教程将无法阅读。以下提供了一个方法，本人亲测有效。如果链接失效，请自行百度解决，养成先自己解决问题的好习惯。
 * [修复github图片加载问题的方法](https://www.jianshu.com/p/3eacebfc55ab "点击查看")
->使用此方法时请阅读下方相关留言会更有帮助。
+>使用此方法时请阅读下方相关留言会更有帮助。  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 ---    
@@ -50,7 +50,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ### <span id="head9"> finish()的用法</span>
 * 说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
-> 补充：当设计不需要返回上一个Activity时则调用finish方法。 
+> 补充：当设计不需要返回上一个Activity时则调用finish方法。   
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 ---
@@ -74,7 +74,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B3.jpg)
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
->这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!
+>这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 ---
@@ -88,13 +88,13 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 修改后我们点击左下角Design栏查看界面，可以看出我们已经完成了最基本的修改文本框内容的基本操作  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%87%E6%9C%AC%E6%A1%86%E7%BB%84%E4%BB%B62.jpg)
 >当然，文本框组件还有更多属性可修改，如字体颜色、字体大小等等  
-[TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)
+[TextView详细用法](https://www.runoob.com/w3cnote/android-tutorial-textview.html)  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 #### <span id="head17"> 按钮（Button）</span>
 * ##### 添加按钮
 * 按钮组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
-[Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
+[Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 * ##### 按钮背景修改
 * 展示  
@@ -110,7 +110,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/baocun_bt_bg.xml)
 >可点击源文件参考代码
 * 再回到当前activity的xml布局文件中在需要修改的按钮组件里修改android:background="@drawable/bt_baocun"内容，获取设置好的背景图片id即可
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 * ##### 按钮点击变色
 * 展示  
@@ -122,16 +122,16 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 我们现在准备好了两个背景图，继续右键drawable文件夹->New->Drawable resource file新建一个xml文件，代码如下
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
 * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
->可点击源文件参考代码
+>可点击源文件参考代码  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 #### <span id="head18"> 输入框（EditText）</span>
 * 输入框组件如同文本组件一样在布局管理器之中添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
-[EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-edittext.html)
+[EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-edittext.html)  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 #### <span id="head19"> 图片（ImageView）</span>
 * 图片组件如同文本组件一样在布局管理器之中添加  
-[ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
+[ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 ---
@@ -143,7 +143,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%802.jpg)
 * 我们可以看出，需要第二段文本时，只需要在布局管理器组件内添加新的文本组件即可，这里边需要给各组件设置id标记，在第二个文本组件里我们需要它排列在第一个文本组件的下方，所以我们需要获取1组件的id再调用android:layout_below代码进行排列。该例子是在**相对布局管理器RelativeLayout**下实现的。  
 [相对布局管理器RelativeLayout详细用法](https://www.runoob.com/w3cnote/android-tutorial-relativelayout.html)
->当然，AndroidStudio的布局管理器有多种，可自行学习使用
+>当然，AndroidStudio的布局管理器有多种，可自行学习使用  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 ---
@@ -186,7 +186,7 @@ final Bundle bundle = intent.getExtras();//我们找来新的bundle盒子接过�
 final String r = bundle.getString("r");//我们通过取件密码r从包裹中得到r并存在自家仓库中的r位置上
 ```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_3.png)
-* 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。
+* 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。  
 --------------------------------------------------------------------------------------------------------------[**回到目录**](#ml)
 
 
