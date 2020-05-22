@@ -57,7 +57,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 ### <span id="head12">当程序编译没问题，运行的时候又闪退，可以试试clean project</span>
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
-[回到目录](#ml)
+<p align=right>[回到目录](#ml)</p>
 
 ---
 ## <span id="head13">（三） 创建工程</span>
