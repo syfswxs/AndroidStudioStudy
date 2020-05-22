@@ -6,7 +6,6 @@
 本文使用了大量的实际操作图文进行讲解，所以对于github图片加载不出来用户可先解决github图片加载问题后再进行学习，不然本教程将无法阅读。以下提供了一个方法，本人亲测有效。如果链接失效，请自行百度解决，养成先自己解决问题的好习惯。
 * [修复github图片加载问题的方法](https://www.jianshu.com/p/3eacebfc55ab "点击查看")
 >使用此方法时请阅读下方相关留言会更有帮助。
->>>>>>[**【点我回到目录】**](#ml)  
 ## 使用AndroidStudio的一些小技巧
 ### 1. 代码自动排版快捷键
 * Ctrl+Alt+L
@@ -27,13 +26,11 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 说明：  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/finish.jpg)
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。   
->>>>>>[**【点我回到目录】**](#ml)
 ## 遇到的问题
 ### 使用equals的时候，可能回事null值的对比参数要放后面
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 ### 当程序编译没问题，运行的时候又闪退，可以试试clean project
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/clean%20project.jpg)  
->>>>>>[**【点我回到目录】**](#ml)
 ## （三） 创建工程
 >想要做一个app第一步则需要打开AndroidStudio创建工程
 * 打开AndroidStudio
@@ -47,7 +44,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 程序自动生成了我们创建的app程序入口，我们此时想编辑进入程序的第一个界面里的内容我们首先要点击切换至入口的布局文件activity_main.xml，如图
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%96%B0%E5%BB%BA%E5%B7%A5%E7%A8%8B4.jpg)
 >这个界面显示了我们进入app后的界面模拟，系统在屏幕中间自动生成了一个文本内容：Hello World!  
->>>>>>[**【点我回到目录】**](#ml)
+
 ## （四） 实现功能
 ### 实现布局管理器内的view功能（文本显示、按钮、图片等等）
 #### 显示文本（TextView文本框组件）
