@@ -33,9 +33,9 @@
 ---    
 ## <span id="head4">（一） 使用AndroidStudio的一些小技巧</span>
 ### <span id="head5"> 代码自动排版快捷键</span>
-* Ctrl + Alt + L
-### <span id="head6"> 自动导入包快捷键</span>
-* Alt + Enter
+  * Ctrl + Alt + L
+  ### <span id="head6"> 自动导入包快捷键</span>
+  * Alt + Enter
 ### <span id="head7"> 展开收缩代码快捷键</span>
 * 使用Ctrl Shift +或-，就可以展开或收起全部代码。
 * Ctrl + 或 - 对当前方法展开或者收起
