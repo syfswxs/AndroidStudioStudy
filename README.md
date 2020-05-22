@@ -92,37 +92,37 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 -----------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
 #### <span id="head17"> 按钮（Button）</span>
 * ##### 添加按钮
-* 按钮组件如同文本组件一样在布局管理器之中添加  
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
-[Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)  
+  * 按钮组件如同文本组件一样在布局管理器之中添加  
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.png)
+  [Button以及ImageButton的详细用法](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)  
 -----------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
 * ##### 按钮背景修改
-* 展示  
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
-* 实现
->把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
-* 右键drawable文件夹->New->Drawable resource file
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_1.png)
-* 自定义名字->ok
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_2.png)
-* 如图修改创建好的xml文件内容，就事先设置好了背景图片
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_3.png)
-* [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/baocun_bt_bg.xml)
->可点击源文件参考代码
-* 再回到当前activity的xml布局文件中在需要修改的按钮组件里修改android:background="@drawable/bt_baocun"内容，获取设置好的背景图片id即可
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)  
+  * 展示  
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_%E6%8C%89%E9%92%AE%E8%83%8C%E6%99%AF.png)
+  * 实现
+    >把按钮的四角改成有弧度的偏椭圆形，视觉上更美观。
+    * 右键drawable文件夹->New->Drawable resource file
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_1.png)
+    * 自定义名字->ok
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_2.png)
+    * 如图修改创建好的xml文件内容，就事先设置好了背景图片
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_3.png)
+       * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/baocun_bt_bg.xml)
+         >可点击源文件参考代码
+    * 再回到当前activity的xml布局文件中在需要修改的按钮组件里修改android:background="@drawable/bt_baocun"内容，获取设置好的背景图片id即可
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbj_4.png)  
 -----------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
 * ##### 按钮点击变色
-* 展示  
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%8C%89%E9%92%AE%E5%8F%98%E8%89%B2.gif)
-* 实现
->按钮点击颜色的变化会带来好的交互体验
-* 思路是在按下的时候换另一个背景图片就行了，所以我们只需要再新建一个背景图片，其他属性都相同只是颜色不同从而达到变色效果
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs.png)
-* 我们现在准备好了两个背景图，继续右键drawable文件夹->New->Drawable resource file新建一个xml文件，代码如下
-![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
-* [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
->可点击源文件参考代码  
+  * 展示  
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%8C%89%E9%92%AE%E5%8F%98%E8%89%B2.gif)
+  * 实现
+    >按钮点击颜色的变化会带来好的交互体验
+    * 思路是在按下的时候换另一个背景图片就行了，所以我们只需要再新建一个背景图片，其他属性都相同只是颜色不同从而达到变色效果
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs.png)
+    * 我们现在准备好了两个背景图，继续右键drawable文件夹->New->Drawable resource file新建一个xml文件，代码如下
+    ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
+     * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
+       >可点击源文件参考代码  
 -----------------------------------------------------------------------------------------------------------------------[**点我回到目录**](#ml)
 #### <span id="head18"> 输入框（EditText）</span>
 * 输入框组件如同文本组件一样在布局管理器之中添加  
