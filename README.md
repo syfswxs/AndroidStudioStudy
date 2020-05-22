@@ -115,9 +115,9 @@
 ---
 * ### 数据的传输
 >获取输入的信息并使用
-  * 输入信息是通过输入框等view输入的，我们要获得输入的数据，则要到与之对应的java文件里编写代码。在此我们以下图id为m_e_r的EditText为例
+  * 输入信息是通过输入框等view输入的，我们要获得输入的数据，则要到与之对应的java文件里编写代码。在此我们以下图id为m_e_r的EditText为例  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_1.png)
-  * 获取输入的内容则要到与之对应的java文件里编辑代码，当我们创建新的activity的时候系统会自动生成与之对应的java文件如图所示，我们点开MainActivity.java文件
+  * 获取输入的内容则要到与之对应的java文件里编辑代码，当我们创建新的activity的时候系统会自动生成与之对应的java文件如图所示，我们点开MainActivity.java文件  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_2.png)
   * 首先我们要new出一个bundle，在这里我们可以理解为我们先找来一个盒子用于打包我们要获取的数据
   ```java
@@ -148,7 +148,7 @@
         final Bundle bundle = intent.getExtras();//我们找来新的bundle盒子接过快递员递给的快递
         /*****接收加工材料******/
         final String r = bundle.getString("r");//我们通过取件密码r从包裹中得到r并存在自家仓库中的r位置上
-  ```
+  ```  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_3.png)
   * 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。
   
