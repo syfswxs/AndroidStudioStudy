@@ -93,13 +93,10 @@
         ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6_anbs_1.png)
           * [文件代码源文件](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/bt_baocun.xml)
           >可点击源文件参考代码
-        
-        
-    
   * #### 输入框（EditText）
     * 输入框组件如同文本组件一样在布局管理器之中添加  
     ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.png)
-    [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-button-imagebutton.html)
+    [EditText(输入框)详解](https://www.runoob.com/w3cnote/android-tutorial-edittext.html)
   * #### 图片（ImageView）
     * 图片组件如同文本组件一样在布局管理器之中添加  
     [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)
@@ -116,4 +113,43 @@
   >当然，AndroidStudio的布局管理器有多种，可自行学习使用
 
 ---
-
+* ### 数据的传输
+>获取输入的信息并使用
+  * 输入信息是通过输入框等view输入的，我们要获得输入的数据，则要到与之对应的java文件里编写代码。在此我们以下图id为m_e_r的EditText为例
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_1.png)
+  * 获取输入的内容则要到与之对应的java文件里编辑代码，当我们创建新的activity的时候系统会自动生成与之对应的java文件如图所示，我们点开MainActivity.java文件
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_2.png)
+  * 首先我们要new出一个bundle，在这里我们可以理解为我们先找来一个盒子用于打包我们要获取的数据
+  ```java
+  Bundle bundle = new Bundle();
+  ```
+  * 现在bundle盒子准备好了，我们要获取数据。new一个字符串格式的r通过寻找id的方式锁定内容。即把输入的内容赋值给r。
+  ```java
+  String r = ((EditText) findViewById(R.id.m_e_r)).getText().toString();//获取日的值
+  ```
+  * 接下来要把r放入准备好的bundle盒子中,
+  ```java
+  bundle_c.putCharSequence("r", r);//把r的值打包到bundle包裹中取件密码为r
+  ```
+  >因为盒子里不只放入的是一个数据，所以设置好取件密码，这样后续从里面获取数据的时候方便快捷
+  * 我们把数据打包好之后，需要呼叫快递员帮我们上门取件
+  ```java
+  Intent intent_c = new Intent(MainActivity.this, CksjActivity.class);//new一个intent_c快递员送数据至CksjActivity界面
+  ```
+  >intent_c为上门取件的快递员，MainActivity为寄货地址，CksjActivity为收获地址，根据自己的需求而修改
+  * 上门取件的快递员已经联系好，接下来我们要把包装好的bundle包裹给快递员配送
+  ```java
+  intent_c.putExtras(bundle);//把bundle包裹给intent_c快递员配送
+  ```
+  * 以上我们完成了数据的打包以及传输接下来我们跳到目的地CksjActivity.java文件接收数据
+  ```java
+        /**************接应快递员取包裹***************************/
+        Intent intent = getIntent();//与intent快递员取得联系
+        final Bundle bundle = intent.getExtras();//我们找来新的bundle盒子接过快递员递给的快递
+        /*****接收加工材料******/
+        final String r = bundle.getString("r");//我们通过取件密码r从包裹中得到r并存在自家仓库中的r位置上
+  ```
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_3.png)
+  * 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。
+  
+  
