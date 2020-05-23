@@ -106,11 +106,16 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 >>>>>>[**【点我回到目录】**](#ml)
 #### e. 下拉列表（Spinner）
 >下拉列表为用户提供了我们设置好的内容选择
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.gif)
 ##### 1. 添加下拉列表
 * 如同文本框组件一样在对应的布局文件的布局管理器里添加
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_1.png)
 * 下拉列表的内容我们需要事先设置好调用就行了，res-values-右键-New-Values resource file
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_2.png)
 * 设置好文件名称-ok，在<resources></resources>内添加字符串数组<string-array>设置好下拉内容
-* 在下拉列表组件里调用即可  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_3.png)
+* 在下拉列表组件里调用即可 
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_4.png)
 >>>>>>[**【点我回到目录】**](#ml)  
   
 ##### 2. 获取下拉列表选中的内容
@@ -130,6 +135,7 @@ final Spinner szs = findViewById(R.id.m_s_zs);
             }
         });
 ```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_5.png)
 * 这样就完成了下拉列表选中的值的获取     
 >>>>>>[**【点我回到目录】**](#ml)  
 ### 2. 内容的布局
