@@ -104,6 +104,34 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 图片组件如同文本组件一样在布局管理器之中添加  
 * [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
+#### e. 下拉列表（Spinner）
+>下拉列表为用户提供了我们设置好的内容选择
+##### 1. 添加下拉列表
+* 如同文本框组件一样在对应的布局文件的布局管理器里添加
+* 下拉列表的内容我们需要事先设置好调用就行了，res-values-右键-New-Values resource file
+* 设置好文件名称-ok，在<resources></resources>内添加字符串数组<string-array>设置好下拉内容
+* 在下拉列表组件里调用即可  
+>>>>>>[**【点我回到目录】**](#ml)  
+  
+##### 2. 获取下拉列表选中的内容
+* 来到对应的java文件中修改代码
+```java
+final Spinner szs = findViewById(R.id.m_s_zs);
+        szs.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {//下拉列表监听器
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String zs = parent.getItemAtPosition(position).toString();
+                bundle.putCharSequence("zs", zs);//占时
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+```
+* 这样就完成了下拉列表选中的值的获取     
+>>>>>>[**【点我回到目录】**](#ml)  
 ### 2. 内容的布局
 * 从下图我们可以看出编辑界面框住的文本框组件只对应的是模拟界面的一个文本而已，我们视模拟界面中的文本为其中一个元素，而我们需要添加新的文本内容的时候需要在布局管理器中再添加一个文本框组件 
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%86%85%E5%AE%B9%E5%B8%83%E5%B1%80.jpg)
