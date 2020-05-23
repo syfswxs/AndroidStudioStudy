@@ -29,7 +29,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。  
 >>>>>>[**【点我回到目录】**](#ml)
 ## （二）遇到的问题
-### 1. 使用equals的时候，可能回事null值的对比参数要放后面
+### 1. 使用equals的时候，可能会是null值的对比参数要放后面
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 >>>>>>[**【点我回到目录】**](#ml)
 ### 2. 当程序编译没问题，运行的时候又闪退，可以试试clean project
