@@ -1,4 +1,3 @@
-# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -21,12 +20,12 @@
 				- [3. 按钮点击变色](#head20)
 			- [c. 输入框（EditText）](#head21)
 			- [d. 图片（ImageView）](#head22)
-			- [e. 下拉列表（Spinner）](#head23)
-				- [1. 添加下拉列表](#head24)
+			- [e. 列表选项框（Spinner）](#head23)
+				- [1. 添加列表选项框](#head24)
 				- [2. 获取下拉列表选中的内容](#head25)
 		- [2. 内容的布局](#head26)
 		- [3. 数据的传输](#head27)
-
+<span id="ml">目录</span>
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
@@ -132,10 +131,11 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 图片组件如同文本组件一样在布局管理器之中添加  
 * [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
-#### <span id="head23">e. 下拉列表（Spinner）</span>
+#### <span id="head23">e. 列表选项框（Spinner）</span>
 >下拉列表为用户提供了我们设置好的内容选择  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.gif)
-##### <span id="head24">1. 添加下拉列表</span>
+* [Spinner(列表选项框)的基本使用](https://www.runoob.com/w3cnote/android-tutorial-spinner.html)  
+##### <span id="head24">1. 添加列表选项框</span>
 * 如同文本框组件一样在对应的布局文件的布局管理器里添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_1.png)
 * 下拉列表的内容我们需要事先设置好调用就行了，res-values-右键-New-Values resource file
