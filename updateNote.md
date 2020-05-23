@@ -105,10 +105,10 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
 #### e. 下拉列表（Spinner）
->下拉列表为用户提供了我们设置好的内容选择
+>下拉列表为用户提供了我们设置好的内容选择  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.gif)
 ##### 1. 添加下拉列表
-* 如同文本框组件一样在对应的布局文件的布局管理器里添加
+* 如同文本框组件一样在对应的布局文件的布局管理器里添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_1.png)
 * 下拉列表的内容我们需要事先设置好调用就行了，res-values-右键-New-Values resource file
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_2.png)
@@ -134,7 +134,7 @@ final Spinner szs = findViewById(R.id.m_s_zs);
 
             }
         });
-```
+```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_5.png)
 * 这样就完成了下拉列表选中的值的获取     
 >>>>>>[**【点我回到目录】**](#ml)  
