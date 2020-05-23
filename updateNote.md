@@ -104,10 +104,11 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 * 图片组件如同文本组件一样在布局管理器之中添加  
 * [ImageView(图像视图)](https://www.runoob.com/w3cnote/android-tutorial-imageview.html)  
 >>>>>>[**【点我回到目录】**](#ml)
-#### e. 下拉列表（Spinner）
+#### e. 列表选项框（Spinner）
 >下拉列表为用户提供了我们设置好的内容选择  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.gif)
-##### 1. 添加下拉列表
+  * [Spinner(列表选项框)的基本使用](https://www.runoob.com/w3cnote/android-tutorial-spinner.html)  
+##### 1. 添加列表选项框
 * 如同文本框组件一样在对应的布局文件的布局管理器里添加  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_1.png)
 * 下拉列表的内容我们需要事先设置好调用就行了，res-values-右键-New-Values resource file
