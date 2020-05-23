@@ -9,7 +9,7 @@
 		- [4. Toast提示框](#head8)
 		- [5. finish()的用法](#head9)
 	- [ （二）遇到的问题](#head10)
-		- [1. 使用equals的时候，可能回事null值的对比参数要放后面](#head11)
+		- [1. 使用equals的时候，可能会是null值的对比参数要放后面](#head11)
 		- [2. 当程序编译没问题，运行的时候又闪退，可以试试clean project](#head12)
 	- [（三） 创建工程](#head13)
 	- [（四） 实现功能](#head14)
@@ -53,7 +53,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 > 补充：当设计不需要返回上一个Activity时则调用finish方法。  
 >>>>>>[**【点我回到目录】**](#ml)
 ## <span id="head10"> （二）遇到的问题</span>
-### <span id="head11">1. 使用equals的时候，可能回事null值的对比参数要放后面</span>
+### <span id="head11">1. 使用equals的时候，可能会是null值的对比参数要放后面</span>
 * ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/equals%E9%97%AE%E9%A2%98.jpg)
 >>>>>>[**【点我回到目录】**](#ml)
 ### <span id="head12">2. 当程序编译没问题，运行的时候又闪退，可以试试clean project</span>
