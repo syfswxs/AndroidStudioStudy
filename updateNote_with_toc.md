@@ -1,4 +1,3 @@
-# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -26,7 +25,10 @@
 				- [2. 获取下拉列表选中的内容](#head25)
 		- [2. 内容的布局](#head26)
 		- [3. 数据的传输](#head27)
-
+		- [4. 界面的跳转](#head28)
+		- [5. 信息提示框](#head29)
+		- [6. 视频启动页](#head30)
+<span id="ml">目录</span>
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
@@ -143,7 +145,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_2.png)
 * 设置好文件名称-ok，在<resources></resources>内添加字符串数组<string-array>设置好下拉内容
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_3.png)
-* 在下拉列表组件里调用即可 
+* 在下拉列表组件里调用即可  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_4.png)
 >>>>>>[**【点我回到目录】**](#ml)  
 
@@ -217,4 +219,143 @@ final String r = bundle.getString("r");//我们通过取件密码r从包裹中�
 ```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_3.png)
 * 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。  
+>>>>>>[**【点我回到目录】**](#ml)
+### <span id="head28">4. 界面的跳转</span>
+>点击按钮跳转至下一个界面  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E7%95%8C%E9%9D%A2%E8%B7%B3%E8%BD%AC.gif)
+* 首先我们先来到按钮所在界面的java文件中修改代码，给该按钮添加一个单击事件监听器，让系统知道我们按下按钮并做出相应的动作
+```java
+Button jc = findViewById(R.id.m_b_jc);
+jc.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+final Intent intent_j = new Intent(MainActivity.this, JczzActivity.class);//new一个intent_j司机让他送我们到目的地
+startActivity(intent_j);//跳转至JczzActivity界面
+}
+});
+```  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%95%8C%E9%9D%A2%E8%B7%B3%E8%BD%AC.png)
+* 这样我们就实现了界面的跳转
+>>>>>>[**【点我回到目录】**](#ml)
+### <span id="head29">5. 信息提示框</span>
+>点击查看详细信息  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86.gif)
+* 首先我们要先设置好信息提示框的内容。在res-values-strings.xml里，在<string name="wqnr">...</string>范围里添加内容
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86.png)
+* 在对应的组件代码里添加单击事件监听器，点击就弹出提示框
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%861.png)
+* 这样我们就实现了点击出现信息提示框的功能
+>>>>>>[**【点我回到目录】**](#ml)
+### <span id="head30">6. 视频启动页</span>
+>程序启动的时候视频启动页，点任意地方跳转  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E5%90%AF%E5%8A%A8%E9%A1%B5%E8%A7%86%E9%A2%91.gif)
+* 其实视频启动页就是个activity活动界面，我们只是把标题栏以及状态栏全部隐藏了，把准备好的视频铺满整个屏幕而已。第一步是先把视频放入到项目当中。右键res文件夹-new-Android Resource Directory
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B5.png)
+* 如图选好raw选项
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B51.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B52.png)
+* raw文件夹就创建好了，再把视频导入raw文件夹  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B53.png)  
+
+代码
+```java
+public class MainActivity extends AppCompatActivity {
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+
+getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
+getSupportActionBar().hide();//隐藏标题栏
+
+/**************点击视频跳转至主界面********************/
+VideoView videoview = (CustomVideoView) findViewById(R.id.m_v);
+videoview.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+Intent mainintent = new Intent(MainActivity.this, ZjmActivity.class); //使用intent方法，在活动间跳转
+startActivity(mainintent);
+finish();
+}
+});
+
+initView();
+
+//*********************设置几秒后自动跳转***********************************/
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent mainintent = new Intent(SplashActivity.this, MainActivity.class); //使用intent方法，在活动间跳转
+//                startActivity(mainintent);
+//                finish();
+//            }
+//        }, 8000);//设置等待时间，与跳转。
+
+
+}
+
+private void initView() {
+VideoView videoview = (CustomVideoView) findViewById(R.id.m_v);
+//设置播放加载路径
+videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.xiaoshi));
+//播放
+videoview.start();
+/*********循环播放****************/
+//监听视频播放完的代码
+videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+@Override
+public void onCompletion(MediaPlayer mPlayer) {
+// TODO Auto-generated method stub
+mPlayer.start();
+mPlayer.setLooping(true);
+}
+});
+
+}
+}
+```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B54.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B55.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B56.png)
+
+布局界面代码
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<com.example.xiaoshi.CustomVideoView
+android:id="@+id/m_v"
+android:layout_width="match_parent"
+android:layout_height="match_parent" />
+
+<TextView
+android:id="@+id/m_t_jr"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:textColor="#F8F7F7"
+android:paddingTop="16dp"
+android:paddingRight="16dp"
+android:text="点击任意地方进入"
+/>
+</RelativeLayout>
+```  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B57.png)
+* 最后我们把该视频界面设置为程序进入的第一个界面，在manifests文件夹下的AndroidManifest.xml文件中
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B58.png)
+* 在对应的activity里添加以下内容
+```java
+<intent-filter>
+<action android:name="android.intent.action.MAIN" />
+
+<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+```  
+* 如此，我们实现了视频启动页的功能。
 >>>>>>[**【点我回到目录】**](#ml)
