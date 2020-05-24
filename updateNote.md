@@ -225,7 +225,7 @@ Button jc = findViewById(R.id.m_b_jc);
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B51.png)
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B52.png)
   * raw文件夹就创建好了，再把视频导入raw文件夹  
-  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B53.png)
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B53.png)  
   代码
     ```java
     public class MainActivity extends AppCompatActivity {
