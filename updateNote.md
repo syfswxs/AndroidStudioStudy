@@ -115,7 +115,7 @@ Toast.makeText(JgjlActivity.this,"显示的文本:",Toast.LENGTH_SHORT).show();
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_2.png)
 * 设置好文件名称-ok，在<resources></resources>内添加字符串数组<string-array>设置好下拉内容
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_3.png)
-* 在下拉列表组件里调用即可 
+* 在下拉列表组件里调用即可  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8B%E6%8B%89%E5%88%97%E8%A1%A8_4.png)
 >>>>>>[**【点我回到目录】**](#ml)  
   
@@ -190,7 +190,7 @@ final String r = bundle.getString("r");//我们通过取件密码r从包裹中�
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93_3.png)
 * 我们就完成了界面之间数据的传输，需要使用的时候直接调用仓库里的r即可。  
 >>>>>>[**【点我回到目录】**](#ml)
-### 界面的跳转
+### 4. 界面的跳转
   >点击按钮跳转至下一个界面  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E7%95%8C%E9%9D%A2%E8%B7%B3%E8%BD%AC.gif)
 * 首先我们先来到按钮所在界面的java文件中修改代码，给该按钮添加一个单击事件监听器，让系统知道我们按下按钮并做出相应的动作
@@ -199,15 +199,15 @@ Button jc = findViewById(R.id.m_b_jc);
         jc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent intent_j = new Intent(MainActivity.this, JczzActivity.class);//new一个intent_c快递员送数据至参考数据界面
+                final Intent intent_j = new Intent(MainActivity.this, JczzActivity.class);//new一个intent_j司机让他送我们到目的地
                 startActivity(intent_j);//跳转至JczzActivity界面
             }
         });
 ```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%95%8C%E9%9D%A2%E8%B7%B3%E8%BD%AC.png)
 * 这样我们就实现了界面的跳转
-### 信息提示框
-  >点击查看详细信息
+### 5. 信息提示框
+  >点击查看详细信息  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86.gif)
   * 首先我们要先设置好信息提示框的内容。在res-values-strings.xml里，在<string name="wqnr">...</string>范围里添加内容
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86.png)
