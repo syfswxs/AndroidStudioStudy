@@ -1,3 +1,4 @@
+# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -28,7 +29,7 @@
 		- [4. 界面的跳转](#head28)
 		- [5. 信息提示框](#head29)
 		- [6. 视频启动页](#head30)
-<span id="ml">目录</span>
+
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
