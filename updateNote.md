@@ -206,6 +206,7 @@ Button jc = findViewById(R.id.m_b_jc);
 ```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%95%8C%E9%9D%A2%E8%B7%B3%E8%BD%AC.png)
 * 这样我们就实现了界面的跳转
+>>>>>>[**【点我回到目录】**](#ml)
 ### 5. 信息提示框
   >点击查看详细信息  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86.gif)
@@ -214,5 +215,103 @@ Button jc = findViewById(R.id.m_b_jc);
   * 在对应的组件代码里添加单击事件监听器，点击就弹出提示框
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%861.png)
   * 这样我们就实现了点击出现信息提示框的功能
-        
+>>>>>>[**【点我回到目录】**](#ml)
+### 6. 视频启动页
+  >程序启动的时候视频启动页，点任意地方跳转  
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E5%90%AF%E5%8A%A8%E9%A1%B5%E8%A7%86%E9%A2%91.gif)
+  * 其实视频启动页就是个activity活动界面，我们只是把标题栏以及状态栏全部隐藏了，把准备好的视频铺满整个屏幕而已。第一步是先把视频放入到项目当中。右键res文件夹-new-Android Resource Directory
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B5.png)
+  * 如图选好raw选项
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B51.png)
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B52.png)
+  * raw文件夹就创建好了，再把视频导入raw文件夹
+  ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B3.png)
+    * 代码
+    ```java
+    public class MainActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
+        getSupportActionBar().hide();//隐藏标题栏
+
+        /**************点击视频跳转至主界面********************/
+        VideoView videoview = (CustomVideoView) findViewById(R.id.m_v);
+        videoview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainintent = new Intent(MainActivity.this, ZjmActivity.class); //使用intent方法，在活动间跳转
+                startActivity(mainintent);
+                finish();
+            }
+        });
+
+        initView();
+
+        //*********************设置几秒后自动跳转***********************************/
+    //        new Handler().postDelayed(new Runnable() {
+    //            @Override
+    //            public void run() {
+    //                Intent mainintent = new Intent(SplashActivity.this, MainActivity.class); //使用intent方法，在活动间跳转
+    //                startActivity(mainintent);
+    //                finish();
+    //            }
+    //        }, 8000);//设置等待时间，与跳转。
+
+
+    }
+
+    private void initView() {
+        VideoView videoview = (CustomVideoView) findViewById(R.id.m_v);
+        //设置播放加载路径
+        videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.xiaoshi));
+        //播放
+        videoview.start();
+        /*********循环播放****************/
+        //监听视频播放完的代码
+        videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mPlayer) {
+                // TODO Auto-generated method stub
+                mPlayer.start();
+                mPlayer.setLooping(true);
+            }
+          });
+  
+        }
+    }
+    ```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B4.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B5.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B6.png)
+    * 布局界面代码
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.xiaoshi.CustomVideoView
+        android:id="@+id/m_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/m_t_jr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#F8F7F7"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:text="点击任意地方进入"
+        />
+</RelativeLayout>
+```  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B7.png)
