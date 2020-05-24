@@ -226,6 +226,7 @@ Button jc = findViewById(R.id.m_b_jc);
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B52.png)
   * raw文件夹就创建好了，再把视频导入raw文件夹  
   ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B53.png)  
+  
   代码
     ```java
     public class MainActivity extends AppCompatActivity {
@@ -316,3 +317,15 @@ Button jc = findViewById(R.id.m_b_jc);
 </RelativeLayout>
 ```  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B57.png)
+* 最后我们把该视频界面设置为程序进入的第一个界面，在manifests文件夹下的AndroidManifest.xml文件中
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E8%A7%86%E9%A2%91%E5%90%AF%E5%8A%A8%E9%A1%B58.png)
+* 在对应的activity里添加以下内容
+```java
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+```  
+* 如此，我们实现了视频启动页的功能。
+>>>>>>[**【点我回到目录】**](#ml)
