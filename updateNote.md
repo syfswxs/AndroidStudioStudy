@@ -345,3 +345,15 @@ Button jc = findViewById(R.id.m_b_jc);
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F4.png)
 * 这样我们就把自定义好的标题栏应用到了activity中
 >>>>>>[**【点我回到目录】**](#ml)
+## （五） 其他
+### 1. 素材下载
+>这里提供了个下载图标素材的网站，可自定义颜色等  
+
+* [下载素材网址](https://icons8.cn/icon/123415/%E6%90%9C%E7%B4%A2%E6%9B%B4%E5%A4%9A)
+
+* 下载好的素材图片我们需要放到res-drawable文件夹下才能调用
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD.png)
+* 只需要找到图片名称即可调用图片
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD1.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD2.png)
+>>>>>>[**【点我回到目录】**](#ml)
