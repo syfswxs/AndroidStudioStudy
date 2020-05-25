@@ -330,7 +330,7 @@ Button jc = findViewById(R.id.m_b_jc);
 * 如此，我们实现了视频启动页的功能。
 >>>>>>[**【点我回到目录】**](#ml)
 ### 7. 自定义上方标题栏
->自动生成的标题栏通常不满足我们的要求，我们可以自定义标题栏 
+>自动生成的标题栏通常不满足我们的要求，我们可以自定义标题栏  
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F1.png)
 * 右键layout文件夹-New-Layout resource file
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F2.png)
