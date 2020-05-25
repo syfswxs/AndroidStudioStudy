@@ -1,4 +1,3 @@
-# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -29,7 +28,11 @@
 		- [4. 界面的跳转](#head28)
 		- [5. 信息提示框](#head29)
 		- [6. 视频启动页](#head30)
-
+		- [7. 自定义上方标题栏](#head31)
+		- [8. 仿ios底部菜单](#head32)
+	- [（五） 其他](#head33)
+		- [1. 素材下载](#head34)
+<span id="ml">目录</span>
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
@@ -359,4 +362,84 @@ android:text="点击任意地方进入"
 </intent-filter>
 ```  
 * 如此，我们实现了视频启动页的功能。
+>>>>>>[**【点我回到目录】**](#ml)
+### <span id="head31">7. 自定义上方标题栏</span>
+>自动生成的标题栏通常不满足我们的要求，我们可以自定义标题栏  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F1.png)
+* 右键layout文件夹-New-Layout resource file
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F2.png)
+* 自定义名称
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F5.png)
+* 根据需要布局好组件
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F3.png)
+* 接下来来到需要用到上方标题栏的activity中，在布局管理器当中添加以下代码
+```java
+<include layout="@layout/title"/>
+```  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%B8%8A%E6%96%B9%E6%A0%87%E9%A2%98%E6%A0%8F4.png)
+* 这样我们就把自定义好的标题栏应用到了activity中
+>>>>>>[**【点我回到目录】**](#ml)
+### <span id="head32">8. 仿ios底部菜单</span>
+* 效果展示  
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%95.gif)
+* 实现
+* 我们需要在java-包文件夹下新建一个ActionSheetDialog类，在此类中，我们可以设置菜单选项的最大个数等
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%951.png)
+* 点击下方看详细源代码
+* [ActionSheetDialog类源码](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/ActionSheetDialog.java)
+* 此类源码中我们为条目设置好了相应的背景图片，如第一个条目是上方两个角为圆弧状，处于中间的条目四方都是直角状，下方的条目则下面两个角为圆弧状。这里我们需要事先设置好背景图片调用即可。
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%95.jpg)
+* 右键drawable文件夹-new-drawable resource file新建文件，设置好相应的名称。
+* [条目背景代码](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/duihuakuang_bg.xml)
+* [上方条目背景代码](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/dibucaidan_bg_top.xml)
+* [中间条目背景代码](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/dibucaidan_bg_middle.xml)
+* [下方条目背景代码](https://github.com/syfswxs/AndroidStudioStudy/blob/master/code/dibucaidan_bg_bttom.xml)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%954.png)
+* 接下来我们调用底部菜单，在按下某个按钮触发发底部菜单，即要使用单击事件监听器
+* 代码
+```java
+//点击右上角添加按钮出现底部弹窗
+Button tj = findViewById(R.id.zjm_b_tj);
+tj.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View v) {
+//定义底部菜单
+new ActionSheetDialog(ZjmActivity.this)
+.builder()
+.setCancelable(true)
+.setCanceledOnTouchOutside(true)
+//定义一个选项
+.addSheetItem("记录结果", ActionSheetDialog.SheetItemColor.XiaoShi,
+new ActionSheetDialog.OnSheetItemClickListener() {//点击该选项时
+@Override
+public void onClick(int which) {//跳转至记录结果界面
+Intent intent = new Intent(ZjmActivity.this,JgjlActivity.class);
+startActivity(intent);
+}
+})
+.addSheetItem("记录过程", ActionSheetDialog.SheetItemColor.XiaoShi,
+new ActionSheetDialog.OnSheetItemClickListener() {//点击该选项时
+@Override
+public void onClick(int which) {
+}
+})
+.show();
+}
+});
+```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%952.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%953.png)
+* 如此我们便实现了仿ios底部菜单
+>>>>>>[**【点我回到目录】**](#ml)
+## <span id="head33">（五） 其他</span>
+### <span id="head34">1. 素材下载</span>
+>这里提供了个下载图标素材的网站，可自定义颜色等  
+
+* [下载素材网址](https://icons8.cn/icon/123415/%E6%90%9C%E7%B4%A2%E6%9B%B4%E5%A4%9A)
+
+* 下载好的素材图片我们需要放到res-drawable文件夹下才能调用
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD.png)
+* 只需要找到图片名称即可调用图片
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD1.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E7%B4%A0%E6%9D%90%E4%B8%8B%E8%BD%BD2.png)
 >>>>>>[**【点我回到目录】**](#ml)
