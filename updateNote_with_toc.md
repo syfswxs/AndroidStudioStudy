@@ -1,3 +1,4 @@
+# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -34,7 +35,7 @@
 		- [10. 布局界面内容超过界面添加滚动条](#head34)
 	- [（五） 其他](#head35)
 		- [1. 素材下载](#head36)
-<span id="ml">目录</span>
+
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
