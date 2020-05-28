@@ -1,4 +1,3 @@
-# <span id="ml">目录</span>
 - [ 安卓大白话笔记](#head1)
 	- [ 工具](#head2)
 	- [ ！必读说明！](#head3)
@@ -31,9 +30,10 @@
 		- [6. 视频启动页](#head30)
 		- [7. 自定义上方标题栏](#head31)
 		- [8. 仿ios底部菜单](#head32)
-	- [（五） 其他](#head33)
-		- [1. 素材下载](#head34)
-
+		- [9. 动态添加组件](#head33)
+	- [（五） 其他](#head34)
+		- [1. 素材下载](#head35)
+<span id="ml">目录</span>
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
 ## <span id="head2"> 工具</span>
@@ -432,8 +432,24 @@ public void onClick(int which) {
 ![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E4%BB%BFios%E5%BA%95%E9%83%A8%E8%8F%9C%E5%8D%953.png)
 * 如此我们便实现了仿ios底部菜单
 >>>>>>[**【点我回到目录】**](#ml)
-## <span id="head33">（五） 其他</span>
-### <span id="head34">1. 素材下载</span>
+### <span id="head33">9. 动态添加组件</span>
+>根据用户的操作动态添加组件，比如删除此条动态，添加新的动态，我们都不能事先把组件准备好，因为不知道用户会发多少条动态。  
+* 创建一个新的activity，在布局文件中添加一个布局管理器并设置好id
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E5%8A%A8%E6%80%81%E6%B7%BB%E5%8A%A0%E7%BB%84%E4%BB%B6.png)
+* 转到代码界面，我们以动态添加按钮组件为例
+>代码
+```java
+LinearLayout layout = findViewById(R.id.g_l);//创建一个相对布局管理器与布局文件对接（此处用了线性布局管理器，根据对应的布局管理器创建）
+Button ccdl = new Button(this);//创建一个按钮组件
+//wyj.setTextSize(TypedValue.COMPLEX_UNIT_SP,24);//设置文本字体大小
+ccdl.setTextColor(Color.rgb(43, 43, 43));//设置文本颜色
+ccdl.setText("用神是怎么得来的？");//设置按钮显示文字
+layout.addView(ccdl);//把该按钮组件添加到布局管理器中
+```
+* 这样就实现了动态添加组件，我们可以根据需要依葫芦画瓢灵活运用
+>>>>>>[**【点我回到目录】**](#ml)
+## <span id="head34">（五） 其他</span>
+### <span id="head35">1. 素材下载</span>
 >这里提供了个下载图标素材的网站，可自定义颜色等  
 
 * [下载素材网址](https://icons8.cn/icon/123415/%E6%90%9C%E7%B4%A2%E6%9B%B4%E5%A4%9A)
