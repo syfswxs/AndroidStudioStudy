@@ -413,6 +413,23 @@ layout.addView(ccdl);//把该按钮组件添加到布局管理器中
 ```
 * 这样就实现了动态添加组件，我们可以根据需要依葫芦画瓢灵活运用
    >>>>>>[**【点我回到目录】**](#ml)
+### 10. 布局界面内容超过界面添加滚动条
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A1.gif)
+* 只需要在相应的布局界面的布局管理器外添加
+>代码
+```java
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls">
+    ...
+    </ScrollView>
+```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A1.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A11.png)
+* 包裹住布局管理器的代码
+   >>>>>>[**【点我回到目录】**](#ml)
 ## （五） 其他
 ### 1. 素材下载
 >这里提供了个下载图标素材的网站，可自定义颜色等  
