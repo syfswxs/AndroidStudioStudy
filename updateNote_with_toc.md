@@ -31,8 +31,9 @@
 		- [7. 自定义上方标题栏](#head31)
 		- [8. 仿ios底部菜单](#head32)
 		- [9. 动态添加组件](#head33)
-	- [（五） 其他](#head34)
-		- [1. 素材下载](#head35)
+		- [10. 布局界面内容超过界面添加滚动条](#head34)
+	- [（五） 其他](#head35)
+		- [1. 素材下载](#head36)
 <span id="ml">目录</span>
 # <span id="head1"> 安卓大白话笔记</span>
 使用最大白话的语言描述Android开发中实现的功能，本文略掉Androidstudio的安装教程，需要的可自行百度。
@@ -448,8 +449,25 @@ layout.addView(ccdl);//把该按钮组件添加到布局管理器中
 ```
 * 这样就实现了动态添加组件，我们可以根据需要依葫芦画瓢灵活运用
 >>>>>>[**【点我回到目录】**](#ml)
-## <span id="head34">（五） 其他</span>
-### <span id="head35">1. 素材下载</span>
+### <span id="head34">10. 布局界面内容超过界面添加滚动条</span>
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/gif/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A1.gif)
+* 只需要在相应的布局界面的布局管理器外添加
+>代码
+```java
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:overScrollMode="ifContentScrolls">
+...
+</ScrollView>
+```
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A1.png)
+![Image](https://github.com/syfswxs/AndroidStudioStudy/blob/master/image/%E6%B7%BB%E5%8A%A0%E6%BB%9A%E5%8A%A8%E6%9D%A11.png)
+* 包裹住布局管理器的代码
+>>>>>>[**【点我回到目录】**](#ml)
+## <span id="head35">（五） 其他</span>
+### <span id="head36">1. 素材下载</span>
 >这里提供了个下载图标素材的网站，可自定义颜色等  
 
 * [下载素材网址](https://icons8.cn/icon/123415/%E6%90%9C%E7%B4%A2%E6%9B%B4%E5%A4%9A)
